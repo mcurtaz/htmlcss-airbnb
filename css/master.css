@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Peralta&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -6,20 +8,30 @@
 
 /* sfondo */
 .city{
-  width: 100vw;
   height: 100vh;
   background-size: cover;
   background-position: center;
+  position: relative;
+  border-bottom: 2px solid black;
 }
+
+
+/* sfondi diversi per diverse città */
 
 .city.galway{
   background-image: url(../img/galway.jpg);
 }
 
-/* sfondi diversi per diverse città */
+.city.telaviv{
+  background-image: url(../img/telaviv.jpg)
+}
 
+.city.tokyo{
+  background-image: url(../img/tokio.jpg)
+}
 
 /* velo di solore per rendere più visibile il testo */
+
 .layover{
   width: 100%;
   height: 100%;
@@ -36,6 +48,7 @@
   transform: translate(-50%, -50%);
   text-align: center;
   color: black;
+  font-family: 'Peralta', cursive;
 }
 
 .titolo h1{
