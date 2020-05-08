@@ -4,16 +4,47 @@
   box-sizing: border-box;
 }
 
+/* sfondo */
 .city{
   width: 100vw;
   height: 100vh;
-  background-image: url(../img/galway.jpg);
   background-size: cover;
   background-position: center;
 }
+
+.city.galway{
+  background-image: url(../img/galway.jpg);
+}
+
+/* sfondi diversi per diverse città */
+
+
+/* velo di solore per rendere più visibile il testo */
+.layover{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(215, 219, 218, 0.4);
+}
+
+
+/* posizionamento e formattazione del testo */
 
 .titolo{
   position: absolute;
   left: 50%;
   top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+}
+
+.titolo h1{
+  font-size: 55px;
+  text-shadow: 2px 2px grey;
+}
+
+.titolo h3{
+  font-style: italic;
+  font-size: 20px;
+  margin-top: 5px;
 }
